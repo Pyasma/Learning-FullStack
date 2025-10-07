@@ -70,14 +70,15 @@
 .guide {
     background-color: #6490dd;
     border-radius: 5px;
+    height: 250px;
     border-bottom: hsl(30, 97%, 87%) 10px solid;
     padding: 50px;
     display: flex;
     flex-direction: row;
 }
 .guideImage {
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     border-radius: 10px;
 }
 .quote {

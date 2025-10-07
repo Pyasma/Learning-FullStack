@@ -1,0 +1,73 @@
+/* ==========================
+   HERO SECTION
+========================== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(39, 39, 100);
+    min-height: 100vh;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+h1 {
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ==========================
+   BOARDS / SCORE CONTAINERS
+========================== */
+.boards {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ==========================
+   SCORE BOXES
+========================== */
+.scores {
+    font-family: 'Cursed Timer Ulil', sans-serif;
+    width: 250px;
+    height: 200px;
+    font-size: 120px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(225, 39, 39);
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+.inc, .new {
+    background-color: rgb(39, 39, 100);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Cursed Timer Ulil', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.inc:hover, .new:hover {
+    background-color: rgba(39, 39, 100, 0.7);
+}
+
+/* ==========================
+   CUSTOM FONT
+========================== */
+@font-face {
+    font-family: 'Cursed Timer Ulil';
+    src: url('cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf') format('truetype');
+}
