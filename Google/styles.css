@@ -1,0 +1,50 @@
+.search {
+    margin-top: 10px;
+    border-radius: 24px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+}
+.main {
+    margin-top: 200px;
+}
+.nav-box{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.google {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    align-content: center;
+}
+
+
+
+.btn {
+    border: 1px solid  #cfd9de;
+    font-weight: light;
+    background-color: white;
+    color: #0f1419;
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+

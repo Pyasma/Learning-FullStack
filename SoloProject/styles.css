@@ -1,0 +1,86 @@
+.main {
+    text-align: center;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.hero, .Middle, .footer {
+    min-height: 400px; /* ensures at least 400px height */
+    padding: 20px;     /* space inside */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(198, 197, 197);
+    align-items: center;
+    background-image: url('image/Delhi.jpg');
+    background-size: cover;
+    text-shadow: 0px 0px 5px black; /* full screen height */
+    padding: 40px 10px;
+}
+.heroheader {
+    background-color: #CF975E;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.textcolor {
+    background-color: #3673dd;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+
+/* Middle part  */
+
+.Middle{
+    background-color: #e5c8ab;
+    color: #144baa;
+}
+
+.Mid-head {
+    padding-top: 20px;
+}
+
+.show {
+    padding-top : 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Footer Part */
+
+.footer {
+    background-color: aliceblue;
+    display: flex;
+    color: hsl(30, 97%, 87%);
+    text-shadow: 0px 0px 5px black;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+.guide {
+    background-color: #6490dd;
+    border-radius: 5px;
+    border-bottom: hsl(30, 97%, 87%) 10px solid;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.guideImage {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.quote {
+    font-style: italic;
+    padding: 20px;
+}

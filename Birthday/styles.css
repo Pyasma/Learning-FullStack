@@ -1,0 +1,84 @@
+.main {
+    text-align: center;
+    font-family: "Happy Monkey", system-ui;
+    background: linear-gradient(#a2d2ff, #efb0efc9);    
+}
+h1, h2, h3, h4, p {
+    color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+}
+#bday-boy {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-color: #efb0efc9;
+}
+
+#bday-age, #bday-date {
+    background-color: #efb0efc9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gift-section {
+    margin-top: 50px;
+}
+.gift-title {
+    margin-bottom: 10px;
+}
+.gift-hint {
+    margin-top: 0px;
+}
+.gift-image, .gift-image-hot{
+    margin: 0 auto; /*Only used for elements which have a set width and height to center div */
+    width: 400px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+.gift-image-cheers {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+#gift-image-happy:hover {
+    background-image: url("images/happy.gif");
+    background-size: cover;
+}
+#gift-image-hot:hover {
+    background-image: url("images/hot.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#gift-image-cool:hover {
+    background-image: url("images/Coolgif.gif");
+}
+#gift-image-genius:hover {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHJyNzZ2cXdxN3p1bGhnYTg0Mmhqejl2cHYwaGhqY2d1amNwZDZjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fvrfW6FkwTvYcZCvsy/giphy.gif");
+}
+#gift-image-cheers:hover {
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2FiMnY0a2ExYWdoem8wZmZxa2U3Z3hxb3MzZmc5eXN6djR3eTAzZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QMkPpxPDYY0fu/giphy.gif");
+}
+#footer {
+    margin: 40px auto 20px;  
+    font-style: italic;
+    width: 400px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
