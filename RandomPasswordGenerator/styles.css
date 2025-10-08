@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    padding: 50px 20px;   /* top/bottom 50px, left/right 20px */
+    max-width: 1200px;     /* optional: limit width on very large screens */
+    width: 90%;            /* responsive width on small screens */
+    margin: 0 auto;          
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(27, 12, 82);
+    padding: 20px;        
+}
+
+
+.white-color {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.green-color {
+    color: rgb(112, 159, 42);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.normal-text {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.underline {
+    width: 600px;
+    background-color: rgb(83, 76, 108);
+    border-radius: 5px;
+    border: 2px solid rgb(83, 76, 108);
+    margin: 30px 10px;
+}
+.generate-button {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: rgb(112, 159, 42);
+    font-size: 20px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    border: none;
+}
+
+.pass {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    width: 200px;
+    height: 40px; 
+    background-color: rgb(83, 76, 108);
+    border-radius: 5px;
+    margin: 20px 10px;
+    color: white;
+    padding: 20px ;
+    text-align: center;
+}
+
+
+.passbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}

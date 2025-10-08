@@ -30,7 +30,7 @@ function randomCard() {
 
 function game() {
     if (player.chips < 10) {
-        bodyEl.textContent = "You don't have enough chips to play!";
+        bodyEl.textContent = "You don't have enough chips to play! -> Refresh the page to restart.";
     }
     player.chips -= 10;
     isAlive = true;
