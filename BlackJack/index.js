@@ -4,9 +4,18 @@ let message = "";
 let cards = [];
 let sum = 0;
 
+let player = {
+    name : prompt("Enter your name:") || "Player",
+    chips: 150
+};
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
+let bodyEl = document.querySelector(".main");
 
 function randomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -20,6 +29,10 @@ function randomCard() {
 }
 
 function game() {
+    if (player.chips < 10) {
+        bodyEl.textContent = "You don't have enough chips to play!";
+    }
+    player.chips -= 10;
     isAlive = true;
     hasBlackJack = false;
     cards = [randomCard(), randomCard()];
@@ -36,12 +49,14 @@ function renderGame() {
     } else if (sum === 21) {
         message = "Wohoo! You've got Blackjack!";
         hasBlackJack = true;
+        player.chips += 10;
     } else {
         message = "You're out of the game!";
         isAlive = false;
     }
 
     messageEl.textContent = message;
+    playerEl.textContent = player.name + ": $" + player.chips;
 }
 
 function newCard() {
