@@ -20,7 +20,6 @@ function randomCard() {
 }
 
 function game() {
-    // initialize the game
     isAlive = true;
     hasBlackJack = false;
     cards = [randomCard(), randomCard()];
