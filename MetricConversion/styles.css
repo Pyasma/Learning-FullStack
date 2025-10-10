@@ -2,50 +2,53 @@
     text-align: center;
     font-family: "Open Sans", sans-serif;
     margin: 0;
-    min-width: 400px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .head {
     margin: 0;
-    padding: 20px;
+    padding: 2vw;               /* relative padding */
     width: 100%;
     display: flex;
-    flex-direction: column;  
-    height: 400px;
-    justify-content: space-around;
-    margin-bottom: 40px;
+    flex-direction: column;
+    height: auto;               /* let content dictate height */
+    justify-content: flex-start; 
+    gap: 1.5vw;                 /* vertical spacing between elements */
+    margin-bottom: 4vw;
     background-color: blueviolet;
     align-items: center;
 }
 
 .head h1 {
     color: white;
-    font-size: 40px;
+    font-size: 5vw;            /* scales with popup width */
     margin: 0;
+    text-align: center;
 }
-
-
-.head button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(72, 70, 70);
-    background-color: rgb(239, 223, 223);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 
 .input {
-    margin: 20px;
-    padding: 10px;
-    height: 70px;
+    margin: 2vw 0;
+    padding: 0.5em;
+    height: auto;
+    width: 50px; 
+    border: 5px solid rgb(90, 99, 195);    
+    height: 50px;           /* scales with container */
+    font-size: 5vw;            /* responsive font size */
     text-align: center;
-    width: 100px;
-    font-size: 50px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+.head button {
+    padding: 0.5em 1em;
+    border: 2px solid rgb(90, 99, 195);
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(72, 70, 70);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    cursor: pointer;
 }
 
 .some {
@@ -53,9 +56,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 40px;
-    width: 90%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgb(221, 221, 221);
-    margin: 40px auto;  
+    margin: 4vw auto;
 }
