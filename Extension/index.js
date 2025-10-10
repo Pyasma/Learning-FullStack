@@ -44,6 +44,7 @@ function storage(){
     }
 }
 
+storage();
 clearBtn.addEventListener("dblclick", function() {
     localStorage.clear();
     saves = [];
