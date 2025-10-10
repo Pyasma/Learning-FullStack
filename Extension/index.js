@@ -1,51 +1,56 @@
 let saves = [];
 let inputField = document.getElementById("input-el");
-let saveBtn = document.getElementById("input-btn");
-let clearBtn = document.getElementById("clear-btn");
+const  saveBtn = document.getElementById("input-btn");
+const clearBtn = document.getElementById("clear-btn");
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("saves"));
 
 const ulel = document.getElementById("ul-el");
+const tabBtn = document.getElementById("tab-btn");
 
-clearBtn.addEventListener("click", function() {
-    localStorage.clear();
-    saves = [];
-    ulel.innerHTML = "";
+tabBtn.addEventListener("click", function() {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        saves.push(tabs[0].url);
+        localStorage.setItem("saves", JSON.stringify(saves));
+        render(saves);
+    });
 })
 
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("saves"));
-
-function storage(){
+function render(leads) {
     let listItems = "";
-    if (leadsFromLocalStorage && performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-        saves = leadsFromLocalStorage;
-        
-        for (let i = 0; i < saves.length; i++) {
-            listItems += `<li><a href='${saves[i]}' target='_blank'>${saves[i]}<a></li>`;
-        }
+    for (let i = 0; i < leads.length; i++) {
+      listItems += `
+        <li>
+          <a href="${leads[i]}" target="_blank">
+            ${leads[i]}
+          </a>
+        </li>`;
     }
     ulel.innerHTML = listItems;
-}
-
+  }
 
 saveBtn.addEventListener("click",function() {
     saves.push(inputField.value);
     // ulel.innerHTML += `<li><a href='${inputField.value}' target='_blank'>${inputField.value}<a></li>`;
     localStorage.setItem("saves", JSON.stringify(saves));
-    render();
+    render(saves);
     inputField.value = "";
 });
 
 
-function render() {
-    listItems = "";
-    for (let i = 0; i < saves.length; i++) {
-        listItems += `
-        <li>
-            <a href='${saves[i]}' target='_blank'>${saves[i]}<a>
-        </li>`;
+function storage(){
+    if (leadsFromLocalStorage) {
+        saves = leadsFromLocalStorage;
+        render(saves);
     }
-    // let listItems = "<li>"+inputField.value+"</li>";
-    // let li = document.createElement("li");
-    // li.textContent = saves;
-    // ulel.appendChild(li);
-    ulel.innerHTML += listItems;
 }
+
+clearBtn.addEventListener("dblclick", function() {
+    localStorage.clear();
+    saves = [];
+    ulel.innerHTML = "";
+})
+
+
+
+
+
