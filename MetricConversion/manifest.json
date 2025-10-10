@@ -1,0 +1,10 @@
+{
+    "manifest": "3",
+    "name": "Metric Conversion",
+    "version": "1.0",
+    "description": "Convert imperial units to metric units on web pages.",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "conversion.png"
+    }
+}
